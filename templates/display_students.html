@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Display Students</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+<h1>Students Table</h1>
+<table>
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Total Marks</th>
+
+    </tr>
+
+    {% for items in student_data %}
+    <tr>
+    <td>{{items['id']}}</td>
+    <td>{{items['name']}}</td>
+    <td>{{items['total_marks']}}</td>
+    </tr>
+    {% endfor %}
+</table>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Get Students</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+<body>
+<h1>Get page and Page Size</h1>
+
+<form action ="" method ="POST">
+    <input type="text" placeholder="Name" name="name" value="{{request.form.name }}">
+    <input type="number" placeholder="Marks" name="marks" value="{{request.form.marks }}">
+    <input type ="submit" value="submit">
+
+</form>
+{% if error %}
+    <p> <strong>Error</strong>{{ error }}</p>
+{% endif %}
+
+</body>
+</html>
