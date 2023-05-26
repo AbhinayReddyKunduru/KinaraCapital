@@ -1,0 +1,2 @@
+# KinaraCapital
+Kinara Capital Assignment
